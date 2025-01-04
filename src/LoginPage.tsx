@@ -187,7 +187,7 @@ export default function LoginPage() {
               <Stack sx={{ gap: 1 }}>
                 <Typography level="body-sm" sx={{ textAlign: 'center' }}>
                   Don't have an account?{' '}
-                  <Link href="#replace-with-a-link" level="title-sm">
+                  <Link href="/classroom-equipment-management/signup" level="title-sm">
                     Sign up!
                   </Link>
                 </Typography>
