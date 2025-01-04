@@ -10,6 +10,7 @@ ReactDOM.createRoot(document.querySelector("#root")!).render(
     <StyledEngineProvider injectFirst>
       <Router>
         <Routes>
+          <Route path="/classroom-equipment-management" element={<LoginPage />} />
           <Route path="/classroom-equipment-management/login" element={<LoginPage />} />
           <Route path="/classroom-equipment-management/signup" element={<SignUpPage />} />
           <Route path="*" element={<LoginPage />} />
