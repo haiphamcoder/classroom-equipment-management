@@ -9,6 +9,7 @@ import FormControl from '@mui/joy/FormControl';
 import FormLabel from '@mui/joy/FormLabel';
 import IconButton, { IconButtonProps } from '@mui/joy/IconButton';
 import Link from '@mui/joy/Link';
+import { Link as RouterLink } from 'react-router-dom';
 import Input from '@mui/joy/Input';
 import Typography from '@mui/joy/Typography';
 import Stack from '@mui/joy/Stack';
@@ -205,7 +206,7 @@ export default function SignUpPage() {
                             <Stack sx={{ gap: 1 }}>
                                 <Typography level="body-sm" sx={{ textAlign: 'center' }}>
                                     Already have an account?{' '}
-                                    <Link href="/classroom-equipment-management/login" level="title-sm">
+                                    <Link component={RouterLink} to="/login" level="title-sm">
                                         Sign in!
                                     </Link>
                                 </Typography>

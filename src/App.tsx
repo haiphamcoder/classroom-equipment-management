@@ -8,11 +8,11 @@ import SignUpPage from './SignUpPage';
 ReactDOM.createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
     <StyledEngineProvider injectFirst>
-      <Router>
+      <Router basename='/classroom-equipment-management'>
         <Routes>
-          <Route path="/classroom-equipment-management" element={<LoginPage />} />
-          <Route path="/classroom-equipment-management/login" element={<LoginPage />} />
-          <Route path="/classroom-equipment-management/signup" element={<SignUpPage />} />
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
           <Route path="*" element={<LoginPage />} />
         </Routes>
       </Router>
